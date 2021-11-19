@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2>{{ post.title }}</h2>
+    <h2> #1 {{ post.title }}</h2>
     <nuxt-content :document="post" />
   </article>
 </template>
@@ -13,7 +13,7 @@ async asyncData({ $content, params, error }) {
       return {
         post,
       }
-    } catch (error) {
+    } catch (e) {
       error('No article found')
     }
   }
