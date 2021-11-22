@@ -4,7 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
-
+  # Blog
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -19,3 +19,46 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      # Recipes
+  - name: "recipes"
+    label: "Recipes"
+    folder: "content/recipes"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image", required: true }
+      - label: "Ingredients"
+        name: "ingredients"
+        widget: "list"
+        required: true
+        fields:
+          - { label: "Ingredient", name: "title", widget: "string" }
+          - label: "Quantity"
+            name: "quantity"
+            widget: "list"
+            fields:
+              - name: "amount"
+                widget: "number"
+              - name: "measurement"
+                widget: "select"
+                options:
+                  - { label: "1/8 Cup", value: "1/8" }
+                  - { label: "1/4 Cup", value: "1/4" }
+                  - { label: "1/2 Cup", value: 1/2 }
+                  - { label: "1 Cup", value: "1" }
+      - label: "Steps"
+        name: "steps"
+        widget: "list"
+        fields:
+          - name: "step-info"
+            widget: "markdown"
+      - label: "Date Published"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        date_format: DD/MM/YYYY
