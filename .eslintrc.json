@@ -64,7 +64,14 @@
           "comma-dangle": [
               "error",
               "never"
-          ]
+          ],
+          "vue/multi-word-component-names": ["error", {
+            "ignores": [
+                "gallery",
+                "index",
+                "Tutorial"
+            ]
+          }]
           }
           
     }
