@@ -8,7 +8,7 @@
         "standard"
     ],
     "parserOptions": {
-        "ecmaVersion": 13,
+        "ecmaVersion": 12,
         "sourceType": "module"
     },
     "plugins": [
@@ -56,7 +56,15 @@
               "non-void-html-element-start-tag-with-trailing-solidus": false,
               "x-invalid-end-tag": true,
               "x-invalid-namespace": true
-            }]
+            }],
+            "space-before-function-paren": [
+              "error",
+              "never"
+          ],
+          "comma-dangle": [
+              "error",
+              "never"
+          ]
           }
           
     }
