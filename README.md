@@ -3,10 +3,11 @@
 
 ## Links
 - [My repo](https://github.com/Raj-Hunjan/cpnt200-a1)
-- [Netlify page](https://kind-gates-71f7fa.netlify.app/)
+- [Live](https://cranky-liskov-5f1856.netlify.app)
+- [Live/admin](https://cranky-liskov-5f1856.netlify.app/admin/#/collections/blog)
 
 ## Code Review
-- I think it was fun working with nuxt, it's definitely gonna take me some time to work with but yeah its pretty cool to work with. One thing I found really annoying was the eslint errors. It was really fustrating cause when you fix one error then another one pops up. But other than that, it was pretty cool to work with.
+- I thinking working with collections is pretty cool. Most of it is just copy and paste from the [docs](https://www.netlifycms.org/docs/widgets/#header) which I liked. I was dealing with alot of eslint errors again but I worked through it. So yeah collections are pretty nice.
 
 ## Attributions
 - Thanks [Ash](https://github.com/lilyx13) for providing the code.
