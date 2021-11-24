@@ -1,4 +1,4 @@
-# Nuxt Frontend Setup
+# Netlify CMS Admin Panel & Collections
 ---
 
 ## Links
