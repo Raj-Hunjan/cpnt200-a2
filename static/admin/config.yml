@@ -32,10 +32,10 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image", required: true }
-       # Test
-  - name: "test"
-    label: "Test"
-    folder: "content/test"
+       # Fav Color
+  - name: "favorite color"
+    label: "Favorte Color"
+    folder: "content/color"
     format: "frontmatter"
     create: true
     slug: "{{slug}}"
@@ -44,4 +44,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: 'Color', name: 'color', widget: 'color' }
+      - { label: 'Color', name: 'color', widget: 'color', required: true }
